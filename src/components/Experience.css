@@ -1,0 +1,102 @@
+/* Experience.css */
+.experience-section {
+    padding: 4rem 2rem;
+    background-color: #f4f4f4;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .experience-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 2rem;
+    position: relative;
+  }
+  
+  .experience-title::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 4px;
+    background-color: #0078d7;
+    margin: 0.5rem auto 0;
+    border-radius: 2px;
+  }
+  
+  .experience-timeline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .timeline-item {
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 3rem;
+  }
+  
+  .timeline-dot {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 12px;
+    height: 12px;
+    background-color: #0078d7;
+    border-radius: 50%;
+    box-shadow: 0 0 0 4px #fff;
+  }
+  
+  .timeline-content {
+    background-color: #fff;
+    padding: 1.5rem 2.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 800px;
+    margin-top: 10px;
+    transition: transform 0.3s;
+  }
+  
+  .timeline-content:hover {
+    transform: translateY(-10px);
+  }
+  
+  .company-name {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 1rem;
+  }
+  
+  .experience-duration {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #777;
+  }
+  
+  .experience-description {
+    list-style-type: disc;
+    padding-left: 20px;
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  .experience-description li {
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .experience-section {
+      padding: 2rem 1rem;
+    }
+  
+    .timeline-item {
+      margin-bottom: 2rem;
+    }
+  
+    .timeline-content {
+      width: 95%;
+    }
+  }
+  

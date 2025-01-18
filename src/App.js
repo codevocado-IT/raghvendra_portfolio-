@@ -4,6 +4,10 @@ import Header from './components/Header';
 import NavBar from './components/NavBar';
 import About from './components/About';
 import Skills from './components/Skills';
+import Experience from './components/Experience';
+import Projects from './components/Projects';
+import Certifications from './components/Certifications';
+import Scholastics from './components/Scholastics';
 // Import other components as needed
 
 const App = () => {
@@ -13,6 +17,10 @@ const App = () => {
             <NavBar />
             <About />
             <Skills />
+            <Experience />
+            <Projects />
+            <Certifications />
+            <Scholastics />
             {/* Add other sections here */}
         </div>
     );

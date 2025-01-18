@@ -1,0 +1,117 @@
+/* Scholastics Section */
+.scholastics-section {
+    background: linear-gradient(135deg, #f9f9f9, #e3f2fd);
+    padding: 4rem 2rem;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Section Title */
+.section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #34495e;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+}
+
+/* Timeline Container */
+.timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+/* Timeline Item */
+.timeline-item {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+    position: relative;
+}
+
+/* Timeline Icon */
+.timeline-icon {
+    background-color: #2980b9;
+    color: white;
+    border-radius: 50%;
+    padding: 1rem;
+    font-size: 2rem;
+    position: absolute;
+    left: -2.5rem;
+    top: 0;
+}
+
+/* Timeline Content */
+.timeline-content {
+    background-color: #ffffff;
+    padding: 1.5rem 2rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    width: 100%;
+    max-width: 700px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Timeline Item Hover Effect */
+.timeline-item:hover .timeline-content {
+    transform: translateX(10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Degree Title */
+.degree-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #2980b9;
+    margin-bottom: 0.5rem;
+}
+
+/* Institution */
+.institution {
+    font-size: 1.2rem;
+    color: #34495e;
+    margin-bottom: 0.5rem;
+    font-style: italic;
+}
+
+/* Details */
+.details {
+    font-size: 1rem;
+    color: #7f8c8d;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .timeline-item {
+        flex-direction: column;
+        align-items: center;
+        margin: 0 1rem;
+    }
+
+    .timeline-icon {
+        left: 0;
+        top: -1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .timeline-content {
+        width: 100%;
+    }
+
+    .degree-title {
+        font-size: 1.6rem;
+    }
+
+    .institution {
+        font-size: 1.1rem;
+    }
+
+    .details {
+        font-size: 0.9rem;
+    }
+}
