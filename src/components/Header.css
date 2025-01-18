@@ -1,7 +1,7 @@
 /* Header Section Styles */
 .header-container {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     background-color: #f4f6f9;
     padding: 2rem;
@@ -14,7 +14,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    max-width: 1200px;
+    max-width: 800px;
     width: 100%;
 }
 
@@ -30,7 +30,7 @@
 
 /* Text Content Styling */
 .text-content {
-    max-width: 800px;
+    max-width: 600px;
     line-height: 1.6;
 }
 
@@ -49,11 +49,46 @@
     margin-bottom: 0;
 }
 
+/* Experience Info Styles */
+.experience-container {
+    max-width: 500px;
+    padding: 1.5rem;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-left: 2rem;
+}
+
+.experience-info {
+    text-align: center;
+    font-size: 1.2em;
+    color: #444;
+}
+
+.experience-info h3 {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #007bff;
+}
+
+.experience-info p {
+    font-size: 1.2em;
+    font-weight: 500;
+    color: #333;
+}
+
 /* Responsive Design for Smaller Screens */
 @media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
     .profile-section {
         flex-direction: column;
         text-align: center;
+        margin-bottom: 2rem;
     }
 
     .profile-image {
@@ -68,6 +103,12 @@
 
     .tagline {
         font-size: 0.9rem;
+        text-align: center;
+    }
+
+    .experience-container {
+        margin-left: 0;
+        width: 100%;
         text-align: center;
     }
 }

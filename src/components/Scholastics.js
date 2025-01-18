@@ -12,8 +12,8 @@ const Scholastics = () => {
                         <FaGraduationCap />
                     </div>
                     <div className="timeline-content">
-                        <h4 className="degree-title">M.Tech (Computer Science)</h4>
-                        <p className="institution">XYZ University, 2023</p>
+                        <h4 className="degree-title">M.Tech  (Information Technology)</h4>
+                        <p className="institution">Sarvepalli Radhakrishnan University, 2024</p>
                         <p className="details">
                             Specialization in Artificial Intelligence. Developed a research paper on Machine Learning Algorithms for Data Prediction.
                         </p>
@@ -25,8 +25,8 @@ const Scholastics = () => {
                         <FaGraduationCap />
                     </div>
                     <div className="timeline-content">
-                        <h4 className="degree-title">B.Tech IT</h4>
-                        <p className="institution">ABC College of Engineering, 2020</p>
+                        <h4 className="degree-title">B.Tech (Information Technology)</h4>
+                        <p className="institution">Mahatma Gandhi Chitrakoot Gramodaya Vishwavidyalaya, 2017</p>
                         <p className="details">
                             Graduated with Honors in Information Technology. Developed a final-year project on Real-Time Web Applications.
                         </p>
@@ -39,7 +39,7 @@ const Scholastics = () => {
                     </div>
                     <div className="timeline-content">
                         <h4 className="degree-title">12th (Science)</h4>
-                        <p className="institution">PQR School, 2016</p>
+                        <p className="institution">S Devi Patel Inter College, 2013</p>
                         <p className="details">
                             Specialization in Physics, Chemistry, and Mathematics. Achieved top marks in Physics and Mathematics.
                         </p>
@@ -51,10 +51,10 @@ const Scholastics = () => {
                         <FaGraduationCap />
                     </div>
                     <div className="timeline-content">
-                        <h4 className="degree-title">10th</h4>
-                        <p className="institution">XYZ Public School, 2014</p>
+                        <h4 className="degree-title">10th (Science)</h4>
+                        <p className="institution">Shri anant Inter College, 2011</p>
                         <p className="details">
-                            Graduated with Distinction. Actively participated in co-curricular activities, including science exhibitions and debates.
+                            Actively participated in co-curricular activities, including science exhibitions and debates.
                         </p>
                     </div>
                 </div>

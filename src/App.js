@@ -8,6 +8,7 @@ import Experience from './components/Experience';
 import Projects from './components/Projects';
 import Certifications from './components/Certifications';
 import Scholastics from './components/Scholastics';
+import Footer from './components/Footer';
 // Import other components as needed
 
 const App = () => {
@@ -21,6 +22,7 @@ const App = () => {
             <Projects />
             <Certifications />
             <Scholastics />
+            <Footer />
             {/* Add other sections here */}
         </div>
     );
