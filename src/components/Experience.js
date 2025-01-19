@@ -4,7 +4,7 @@ import './Experience.css'; // Import the CSS for styling
 const Experience = () => {
   const experiences = [
     {
-      title: 'Senior PHP Developer',
+      title: 'Senior Software Engineer',
       company: 'NIRDPR - National Institute of Rural Development and Panchayati Raj',
       location: 'Hyderabad, India',
       duration: '12/2021 – Present',
