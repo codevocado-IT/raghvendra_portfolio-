@@ -1,117 +1,77 @@
-/* Scholastics Section */
+/* Scholastics.css */
 .scholastics-section {
-    background: linear-gradient(135deg, #f9f9f9, #e3f2fd);
-    padding: 4rem 2rem;
-    text-align: center;
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    background-color: #f9f9f9;
+    color: #333;
 }
 
-/* Section Title */
 .section-title {
-    font-size: 2.5rem;
-    font-weight: bold;
-    color: #34495e;
-    margin-bottom: 2rem;
-    text-transform: uppercase;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #2c3e50;
 }
 
-/* Timeline Container */
 .timeline {
     display: flex;
     flex-direction: column;
-    gap: 3rem;
+    gap: 20px;
 }
 
-/* Timeline Item */
 .timeline-item {
     display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    gap: 2rem;
-    max-width: 900px;
-    margin: 0 auto;
-    position: relative;
-}
-
-/* Timeline Icon */
-.timeline-icon {
-    background-color: #2980b9;
-    color: white;
-    border-radius: 50%;
-    padding: 1rem;
-    font-size: 2rem;
-    position: absolute;
-    left: -2.5rem;
-    top: 0;
-}
-
-/* Timeline Content */
-.timeline-content {
+    align-items: center;
+    gap: 15px;
     background-color: #ffffff;
-    padding: 1.5rem 2rem;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e1e1e1;
     border-radius: 8px;
-    width: 100%;
-    max-width: 700px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
 }
 
-/* Timeline Item Hover Effect */
-.timeline-item:hover .timeline-content {
-    transform: translateX(10px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+.timeline-item:hover {
+    transform: translateY(-5px);
 }
 
-/* Degree Title */
+.timeline-icon {
+    font-size: 2.5rem;
+    color: #3498db;
+}
+
+.timeline-content {
+    flex: 1;
+}
+
 .degree-title {
-    font-size: 1.8rem;
-    font-weight: bold;
-    color: #2980b9;
-    margin-bottom: 0.5rem;
-}
-
-/* Institution */
-.institution {
     font-size: 1.2rem;
+    font-weight: bold;
     color: #34495e;
-    margin-bottom: 0.5rem;
-    font-style: italic;
 }
 
-/* Details */
-.details {
+.institution {
     font-size: 1rem;
     color: #7f8c8d;
+    margin: 5px 0;
+}
+
+.details {
+    font-size: 0.9rem;
+    color: #95a5a6;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
     .timeline-item {
         flex-direction: column;
-        align-items: center;
-        margin: 0 1rem;
+        align-items: flex-start;
     }
 
     .timeline-icon {
-        left: 0;
-        top: -1.5rem;
-        margin-bottom: 1rem;
-    }
-
-    .timeline-content {
-        width: 100%;
+        font-size: 2rem;
     }
 
     .degree-title {
-        font-size: 1.6rem;
-    }
-
-    .institution {
         font-size: 1.1rem;
-    }
-
-    .details {
-        font-size: 0.9rem;
     }
 }

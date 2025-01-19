@@ -1,6 +1,7 @@
+// Scholastics.js
 import React from 'react';
 import './Scholastics.css';
-import { FaGraduationCap } from 'react-icons/fa'; // Import icon for degree
+import { FaGraduationCap } from 'react-icons/fa';
 
 const Scholastics = () => {
     return (
@@ -12,7 +13,7 @@ const Scholastics = () => {
                         <FaGraduationCap />
                     </div>
                     <div className="timeline-content">
-                        <h4 className="degree-title">M.Tech  (Information Technology)</h4>
+                        <h4 className="degree-title">M.Tech (Information Technology)</h4>
                         <p className="institution">Sarvepalli Radhakrishnan University, 2024</p>
                         <p className="details">
                             Specialization in Artificial Intelligence. Developed a research paper on Machine Learning Algorithms for Data Prediction.
@@ -52,7 +53,7 @@ const Scholastics = () => {
                     </div>
                     <div className="timeline-content">
                         <h4 className="degree-title">10th (Science)</h4>
-                        <p className="institution">Shri anant Inter College, 2011</p>
+                        <p className="institution">Shri Anant Inter College, 2011</p>
                         <p className="details">
                             Actively participated in co-curricular activities, including science exhibitions and debates.
                         </p>

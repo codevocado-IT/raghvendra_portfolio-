@@ -28,18 +28,18 @@ const Projects = () => {
     // },
     {
       title: 'Helpdesk System',
-      description: 'Created a role-based ticketing system for DRDO to manage support queries effectively.',
+      description: 'Created a role-based ticketing system for NIRD to manage support queries effectively.',
       techStack: 'PHP, API Development, MySQL, Web Application Development, Jenkins, CI/CD',
       image: '',
       link: '#',
     },
-    {
-      title: 'eMFr (Electronic Medical Form)',
-      description: 'Developed an eMFr for DRDO, used to handle medical forms electronically.',
-      techStack: 'AWS, Web Application Development, CI/CD, Jenkins',
-      image: '',
-      link: '#',
-    },
+    // {
+    //   title: 'eMFR (Electronic Medical Form)',
+    //   description: 'Developed an eMFr for DRDO, used to handle medical forms electronically.',
+    //   techStack: 'AWS, Web Application Development, CI/CD, Jenkins',
+    //   image: '',
+    //   link: '#',
+    // },
     {
       title: 'Object Detection System',
       description: 'Worked on a system for detecting objects, used for enhancing security systems.',

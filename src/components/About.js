@@ -1,9 +1,19 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+// import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser, faCode, faUsers, faLightbulb } from '@fortawesome/free-solid-svg-icons';
 import './About.css'; // Ensure you create a corresponding CSS file for styling
 
 const About = () => {
+    const startDate = new Date('2017-07-20');
+    const [experience, setExperience] = useState({});
+    useEffect(() => {
+    const now = new Date();
+    const diff = now - startDate;
+    const years = Math.floor(diff / (1000 * 60 * 60 * 24 * 365));
+    setExperience({ years });
+}, [startDate]);
+
     return (
         <section className="about" id="about">
             <div className="about-header">
@@ -16,7 +26,7 @@ const About = () => {
                     <FontAwesomeIcon icon={faUser} className="about-icon" />
                     <h3>Who I Am</h3>
                     <p>
-                        Experienced Senior Software Engineer with a passion for crafting elegant solutions to complex technical challenges. With 6+ years in the industry, I’ve honed my skills in full-stack development, software architecture, and technical leadership.
+                        Experienced Senior Software Engineer with a passion for crafting elegant solutions to complex technical challenges. With {experience.years}+ years in the industry, I’ve honed my skills in full-stack development, software architecture, and technical leadership.
                     </p>
                 </div>
 
