@@ -11,13 +11,22 @@ const Chatbot = () => {
         message: '',
     });
 
-    // Open the chatbot after 30 seconds
+    // Open the chatbot 30 seconds after page load
     useEffect(() => {
-        const timer = setTimeout(() => {
+        const initialTimer = setTimeout(() => {
             setIsVisible(true);
-        }, 1000);
-        return () => clearTimeout(timer);
+        }, 30000); // 30 seconds
+        return () => clearTimeout(initialTimer);
     }, []);
+
+    // Open the chatbot 20 seconds after it is closed
+    const handleClose = () => {
+        setIsVisible(false);
+        const reopenTimer = setTimeout(() => {
+            setIsVisible(true);
+        }, 20000); // 20 seconds
+        return () => clearTimeout(reopenTimer);
+    };
 
     const handleInputChange = (e) => {
         const { name, value } = e.target;
@@ -25,8 +34,7 @@ const Chatbot = () => {
     };
 
     const handleSubmit = async () => {
-        // Replace this URL with your actual API endpoint
-        const apiUrl = 'https://your-api-endpoint.com/submit';
+        const apiUrl = 'https://webapi.codevocado.in/api/submit'; // Replace with actual endpoint
         try {
             const response = await fetch(apiUrl, {
                 method: 'POST',
@@ -47,10 +55,6 @@ const Chatbot = () => {
         } catch (error) {
             alert('Failed to submit data. Please check your network connection.');
         }
-    };
-
-    const handleClose = () => {
-        setIsVisible(false);
     };
 
     return isVisible ? (
